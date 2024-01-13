@@ -10,4 +10,4 @@
 
 # Comment installer KeyBoardApp for Paxo 
 
-> Pour 
+!> Pour installer KeyboardAPP for Paxo sur votre Smartphone Paxo , veuillez 
