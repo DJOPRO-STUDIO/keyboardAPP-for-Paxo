@@ -12,10 +12,10 @@
 
 > Pour installer KeyboardAPP for Paxo sur votre Smartphone Paxo , veuillez suivre les étapes suivants pour avoir l'installer correctement :
 
-1- Télécharger le fichier ZIP de cette reposity .
-2- Extracter tous les fichiers depuis le fichier ZIP.
-3- créer un dossier sur la carte SD de votre Paxo dans le chemin ceci : SD/storage/apps/lua.
-4- nommer le dossier à " keyboardAPP ".
-5- Copiez tous les fichiers du fichier ZIP vers le dossier créer et nommer par " keyboardAPP ".
+- Télécharger le fichier ZIP de cette reposity .
+- Extracter tous les fichiers depuis le fichier ZIP.
+- créer un dossier sur la carte SD de votre Paxo dans le chemin ceci : SD/storage/apps/lua.
+- nommer le dossier à " keyboardAPP ".
+- Copiez tous les fichiers du fichier ZIP vers le dossier créer et nommer par " keyboardAPP ".
 
 -   Voila normalement vous avez l'app lua installer sur votre Paxo .
