@@ -13,7 +13,7 @@
 - Avec KeyBoardAPP , vous pouvez créer votre propre clavier avec des touche de votre choix .
   
 - Facile , pratique et efficace 
-- 
+  
 <br>
 
 # Comment installer KeyBoardApp for Paxo 
