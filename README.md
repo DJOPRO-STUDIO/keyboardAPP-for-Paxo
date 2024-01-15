@@ -23,7 +23,7 @@
 
 <br>
 
-1 - Télécharger le fichier ZIP de cette reposity .
+1 - Télécharger le fichier ZIP on cliquant <a href="">ici</a>
 <br>
 
 2 - Extracter tous les fichiers depuis le fichier ZIP.
