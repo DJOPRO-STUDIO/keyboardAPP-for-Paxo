@@ -23,7 +23,7 @@
 
 <br>
 
-1 - Télécharger le fichier ZIP on cliquant <a href="">ici</a>
+1 - Télécharger le fichier ZIP on cliquant <a href="https://raw.githubusercontent.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/main/keyboardAPP.zip">ici</a>
 <br>
 
 2 - Extracter tous les fichiers depuis le fichier ZIP.
