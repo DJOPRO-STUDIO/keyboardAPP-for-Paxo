@@ -40,3 +40,21 @@
 <br>
 -   Voila normalement vous avez l'app lua installer sur votre Paxo .
 <br>
+
+# Comment créer un clavier compatible sur le keyboardApp for Paxo
+<br>
+> Pour créer votre propre clavier , il faut suivre le démarche suivant pour y bien réussir :
+
+<br>
+<br>
+
+1 - Aprés d'avoir bien installer le keyboardAPP , allez sur "SD/storage/apps/lua/keyboardAPP/keyboard" puis créer un dossier nommé le un nombre qui est inférieur à ceux des autres dossier présent .
+<br>
+-> Example : il y'a deux dossiers nommé 1 et 2 dans le dossier "keyboard" justte créer le dossier et nommé le 3
+<br>
+2 - dans ce dossier vous créer un fichier nommé "keyboard.txt" est vous mettez dedans le texte qui ce trouve dans ce lien <a href="">ci</a>
+<br> 
+REMARQUE : Dans le fichier txt , vous allez juste nommé les bouttons , voici un chemin correspant au fichier text :
+<br>
+![keyboard](https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/assets/128752386/6a1dfec2-55bd-483d-95f4-b1a7dbece8c8)
+
