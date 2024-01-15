@@ -54,7 +54,7 @@
 -> Example : il y'a deux dossiers nommé 1 et 2 dans le dossier "keyboard" justte créer le dossier et nommé le 3
 <br>
 <br>
-2 - dans ce dossier vous créer un fichier nommé "keyboard.txt" est vous mettez dedans le texte qui ce trouve dans ce lien <a href="">ci</a>
+2 - dans ce dossier vous créer un fichier nommé "keyboard.txt" est vous mettez dedans le texte qui ce trouve dans ce lien <a href="https://raw.githubusercontent.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/main/DJ_Keyboard.txt">ici</a>
 <br> 
 <br>
 REMARQUE : Dans le fichier txt , vous allez juste nommé les bouttons , voici un chemin correspant au fichier text :
