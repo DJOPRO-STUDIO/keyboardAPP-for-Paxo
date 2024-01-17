@@ -8,13 +8,13 @@
 # Le PLAN 
 
 <br>
-1 - <a href="">Les fonctionnalités de KeyBoardAPP for PAXO</a>
+1 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-fonctionnalit%C3%A9s-de-keyboardapp-for-paxo">Les fonctionnalités de KeyBoardAPP for PAXO</a>
 <br>
-2 - <a href="">Comment installer KeyBoardApp for Paxo -- l'APP</a>
+2 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-keyboardapp-for-paxo">Comment installer KeyBoardApp for Paxo -- l'APP</a>
 <br>
 3 - <a href="">Comment installer KeyBoardApp for Paxo -- le Plugin</a>
 <br>
-4 - <a href="">Comment créer un clavier compatible sur le keyboardApp for Paxo</a>
+4 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-cr%C3%A9er-un-clavier-compatible-sur-le-keyboardapp-for-paxo">Comment créer un clavier compatible sur le keyboardApp for Paxo</a>
 <br>
 5 - <a href="">Les versions disponible pour le keyboardAPP for PAXO</a>
 <br>
