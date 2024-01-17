@@ -12,7 +12,7 @@
 <br>
 2 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-keyboardapp-for-paxo">Comment installer KeyBoardApp for Paxo -- l'APP</a>
 <br>
-3 - <a href="">Comment installer KeyBoardApp for Paxo -- le Plugin</a>
+3 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-et-int%C3%A9grer-le-keyboardapp-plugin-dans-un-app-lua">Comment installer KeyBoardApp for Paxo -- le Plugin</a>
 <br>
 4 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-cr%C3%A9er-un-clavier-compatible-sur-le-keyboardapp-for-paxo">Comment créer un clavier compatible sur le keyboardApp for Paxo</a>
 <br>
