@@ -55,6 +55,50 @@
 -   Voila normalement vous avez l'app lua installer sur votre Paxo .
 <br>
 
+# Comment installer et intégrer le KeyBoardApp Plugin dans un APP LUA
+<br>
+<br>
+> Pour la version minimal :
+<br>
+<br>
+
+Une nouvelle version du clavier nommé "minimal version" va être la version pre-release du plugin .
+<br>
+<br>
+- La version minimal est une version de keyboardAPP plugin stable et minimaliser , voici des infos détaillés a propos de la version :
+<br>
+<br>
+1 - Le "Custom keyboard system" qui vous permettre de créer votre keyboard personnaliser va être effacer .
+<br>
+2 - Le bug de redemarrage de l'emulatteur a été réglé .(uniquement dans cette version)
+<br>
+3 - Il y aura deux type de clavier présent  : AZERTY , QWERTY
+<br>
+
+-->  Donc pour l'intégrer dans vos projet , il sufit juste de suivre les étapes suivante :
+<br>
+<br>
+1 - Téléchager le fichier ZIP en cliquant <a href="">ici</a>
+<br>
+<br>
+2 - Extracter le fichier dans le dossier de l'app lua que vous voulez l'intégrer dedans .
+<br>
+<br>
+3 - Ouvrez le fichier "code.txt" qui ce trouve dans le dossier précédent
+<br>
+<br>
+4 - Copiez tous le code le fichier "main.lua" de votre APP LUA
+<br>
+<br>
+---- L'utilisation 
+<br>
+<br>
+Dans le code , il aura une seul commande qui gère tous :
+```
+setKeysLOCAL()
+```
+<br>
+<br>
 # Comment créer un clavier compatible sur le keyboardApp for Paxo
 <br>
 > Pour créer votre propre clavier , il faut suivre le démarche suivant pour y bien réussir :
@@ -84,5 +128,5 @@ REMARQUE : Dans le fichier txt , vous allez juste nommé les bouttons , voici un
 <br>
 1 - Original Version (instable et non dispo)
 <br>
-2 - Minimal version > clique <a href="">ici</a> pour le voir dans le plan
+2 - Minimal version > clique <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-versions-disponible-pour-le-keyboardapp-for-paxo">ici</a> pour le voir dans le plan
 
