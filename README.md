@@ -96,7 +96,7 @@ Une nouvelle version du clavier nommé "minimal version" va être la version pre
 Dans le code , il aura une seul commande qui gère tous :
 <br>
 ```
-setKeysLOCAL()
+DJKeyboard()
 ```
 
 <br>
@@ -105,10 +105,9 @@ setKeysLOCAL()
 <br>
 
 ```
-setKeysLOCAL(nom,TYPE,VISIBLE)
--- nom = AZERTY ou QWERTY
--- TYPE = MIN ou MAJ
--- VISIBLE = true ou false
+DJKeyboard(TYPEwin,VISIBLE)
+-- TYPEwin = When we click done automaticly goe on the name of the value window that is put it here
+-- VISIBLE = SHOW or HIDE
 ```
 
 <br>
@@ -116,9 +115,9 @@ setKeysLOCAL(nom,TYPE,VISIBLE)
 <br>
 
 ```
-local OUTPUTkeyBOARD = ""
-setKeysLOCAL("AZERTY","MAJ",true)
-print(OUTPUTkeyBOARD)
+local OUT = ""
+setKeysLOCAL(window, "SHOW")
+print(OUT)
 ```
 
 <br>
