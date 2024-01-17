@@ -74,4 +74,15 @@
 REMARQUE : Dans le fichier txt , vous allez juste nommé les bouttons , voici un chemin correspant au fichier text :
 <br>
 ![keyboard](https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/assets/128752386/6a1dfec2-55bd-483d-95f4-b1a7dbece8c8)
+<br>
+<br>
+
+# Les versions disponible pour le keyboardAPP for PAXO
+<br>
+- Pour le plugin :
+<br>
+<br>
+1 - Original Version (instable et non dispo)
+<br>
+2 - Minimal version > clique <a href="">ici</a> pour le voir dans le plan
 
