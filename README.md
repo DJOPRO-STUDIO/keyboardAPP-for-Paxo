@@ -153,5 +153,5 @@ REMARQUE : Dans le fichier txt , vous allez juste nommé les bouttons , voici un
 <br>
 1 - Original Version (instable et non dispo)
 <br>
-2 - Minimal version > clique <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-versions-disponible-pour-le-keyboardapp-for-paxo">ici</a> pour le voir dans le plan
+2 - Minimal version > clique <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#le-plan">ici</a> pour le voir dans le plan
 
