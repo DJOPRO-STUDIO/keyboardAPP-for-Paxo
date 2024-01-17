@@ -101,20 +101,26 @@ setKeysLOCAL()
 
 <br>
 - Les arguments :
+<br>
+<br>
+
 ```
 setKeysLOCAL(nom,TYPE,VISIBLE)
 -- nom = AZERTY ou QWERTY
 -- TYPE = MIN ou MAJ
 -- VISIBLE = true ou false
 ```
+
 <br>
 - Example :
 <br>
+
 ```
 local OUTPUTkeyBOARD = ""
 setKeysLOCAL("AZERTY","MAJ",true)
 print(OUTPUTkeyBOARD)
 ```
+
 <br>
 <br>
 
