@@ -94,11 +94,30 @@ Une nouvelle version du clavier nommé "minimal version" va être la version pre
 <br>
 <br>
 Dans le code , il aura une seul commande qui gère tous :
+<br>
 ```
 setKeysLOCAL()
 ```
+
+<br>
+- Les arguments :
+```
+setKeysLOCAL(nom,TYPE,VISIBLE)
+-- nom = AZERTY ou QWERTY
+-- TYPE = MIN ou MAJ
+-- VISIBLE = true ou false
+```
+<br>
+- Example :
+<br>
+```
+local OUTPUTkeyBOARD = ""
+setKeysLOCAL("AZERTY","MAJ",true)
+print(OUTPUTkeyBOARD)
+```
 <br>
 <br>
+
 # Comment créer un clavier compatible sur le keyboardApp for Paxo
 <br>
 > Pour créer votre propre clavier , il faut suivre le démarche suivant pour y bien réussir :
