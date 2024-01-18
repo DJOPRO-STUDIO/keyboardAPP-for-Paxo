@@ -78,7 +78,7 @@ Une nouvelle version du clavier nommé "minimal version" va être la version pre
 -->  Donc pour l'intégrer dans vos projet , il sufit juste de suivre les étapes suivante :
 <br>
 <br>
-1 - Téléchager le fichier ZIP en cliquant <a href="https://raw.githubusercontent.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/main/keyboard_MINIMAL.zip">ici</a>
+1 - Téléchager le fichier ZIP depuis le releases en cliquant <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/releases/tag/KMIN_1.0.0.0">ici</a>
 <br>
 <br>
 2 - Extracter le fichier dans le dossier de l'app lua que vous voulez l'intégrer dedans .
