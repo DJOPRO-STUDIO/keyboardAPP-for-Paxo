@@ -116,7 +116,7 @@ DJKeyboard(TYPEwin,VISIBLE)
 
 ```
 local OUT = ""
-setKeysLOCAL(window, "SHOW")
+DJKeyboard(window, "SHOW")
 print(OUT)
 ```
 
