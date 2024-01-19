@@ -785,5 +785,4 @@ function DJKeyboard(windowPrece,shHide)
         gui.setWindow(windowPrece)
     end
 
-	end
 end
