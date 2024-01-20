@@ -9,14 +9,13 @@
 
 <br>
 1 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-fonctionnalit%C3%A9s-de-keyboardapp-for-paxo">Les fonctionnalités de KeyBoardAPP for PAXO</a>
+
 <br>
-2 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-keyboardapp-for-paxo">Comment installer KeyBoardApp for Paxo -- l'APP</a>
+2 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-et-int%C3%A9grer-le-keyboardapp-plugin-dans-un-app-lua">Comment installer KeyBoardApp for Paxo -- le Plugin</a>
 <br>
-3 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-et-int%C3%A9grer-le-keyboardapp-plugin-dans-un-app-lua">Comment installer KeyBoardApp for Paxo -- le Plugin</a>
+3 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-cr%C3%A9er-un-clavier-compatible-sur-le-keyboardapp-for-paxo">Comment créer un clavier compatible sur le keyboardApp for Paxo</a>
 <br>
-4 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-cr%C3%A9er-un-clavier-compatible-sur-le-keyboardapp-for-paxo">Comment créer un clavier compatible sur le keyboardApp for Paxo</a>
-<br>
-5 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-versions-disponible-pour-le-keyboardapp-for-paxo">Les versions disponible pour le keyboardAPP for PAXO</a>
+4 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-versions-disponible-pour-le-keyboardapp-for-paxo">Les versions disponible pour le keyboardAPP for PAXO</a>
 <br>
 
 # Les fonctionnalités de KeyBoardAPP for PAXO
@@ -30,30 +29,6 @@
   
 <br>
 
-# Comment installer KeyBoardApp for Paxo 
-<br>
-
-> Pour installer KeyboardAPP for Paxo sur votre Smartphone Paxo , veuillez suivre les étapes suivants pour avoir l'installer correctement :
-
-<br>
-
-1 - Télécharger le fichier ZIP on cliquant <a href="https://raw.githubusercontent.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/main/keyboardAPP.zip" download>ici</a>
-<br>
-
-2 - Extracter tous les fichiers depuis le fichier ZIP.
-<br>
-
-3 - créer un dossier sur la carte SD de votre Paxo dans le chemin ceci : SD/storage/apps/lua.
-<br>
-
-4 - nommer le dossier à " keyboardAPP ".
-<br>
-
-5 - Copiez tous les fichiers du fichier ZIP vers le dossier créer et nommer par " keyboardAPP ".
-<br>
-<br>
--   Voila normalement vous avez l'app lua installer sur votre Paxo .
-<br>
 
 # Comment installer et intégrer le KeyBoardApp Plugin dans un APP LUA
 <br>
