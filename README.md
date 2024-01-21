@@ -8,6 +8,8 @@
 # Le PLAN 
 
 <br>
+
+*** - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/wiki/Commande">WIKI</a>
 1 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-fonctionnalit%C3%A9s-de-keyboardapp-for-paxo">Les fonctionnalités de KeyBoardAPP for PAXO</a>
 
 <br>
