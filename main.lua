@@ -1,7 +1,19 @@
-local OUT = ""
+local gui1 = require('paxolib')
+
+function run()
+
+    local windowHI = gui1.window("Welcome")
+
+    local button11 = gui1.button(windowHI, 50,50,250,250)
+    --button:setText("WELOCME TO NEGA APP")
+
+    gui1.setWindow(windowHI)
+    -- define the value of the output 
+    local OUT = ""
     
 
-    
+    -- PASTE THE PLUGIN BEFORE THE CODE ( NOT THE UI )
+
     function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
         local gui = require('paxolib')
         local default = ""
@@ -892,3 +904,21 @@ local OUT = ""
     
         
     end
+
+    
+    
+    -- END PLUGIN 
+    
+
+    button11:onClick(function()
+        
+        DJKeyboard(windowHI,"SHOW", function()
+            print("KEYBOARD OUTPUT : " .. OUT)
+        end)
+        
+        
+    end)
+
+    
+    
+end
