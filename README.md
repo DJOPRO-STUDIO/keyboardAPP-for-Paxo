@@ -80,9 +80,10 @@ DJKeyboard()
 <br>
 
 ```
-DJKeyboard(TYPEwin,VISIBLE)
--- TYPEwin = When we click done automaticly goe on the name of the value window that is put it here
+DJKeyboard(TYPEwin,VISIBLE,detect_DONE_key)
+-- TYPEwin = When we click done automaticly go on the name of the value window that is put it here
 -- VISIBLE = SHOW or HIDE
+-- detect_DONE_key = When the done key pressed on keyboard they execute the function
 ```
 
 <br>
@@ -90,9 +91,11 @@ DJKeyboard(TYPEwin,VISIBLE)
 <br>
 
 ```
-local OUT = ""
-DJKeyboard(window, "SHOW")
-print(OUT)
+ local OUT = ""
+ DJKeyboard(window,"SHOW",function() 
+        print("KEYBOARD OUTPUT" .. OUT)
+end)
+
 ```
 
 <br>
