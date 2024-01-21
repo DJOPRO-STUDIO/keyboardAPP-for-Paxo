@@ -11,8 +11,8 @@
 
 *** - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/wiki">WIKI</a>
 <br>
-1 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-fonctionnalit%C3%A9s-de-keyboardapp-for-paxo">Les fonctionnalités de KeyBoardAPP for PAXO</a>
 
+1 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#les-fonctionnalit%C3%A9s-de-keyboardapp-for-paxo">Les fonctionnalités de KeyBoardAPP for PAXO</a>
 <br>
 2 - <a href="https://github.com/DJOPRO-STUDIO/keyboardAPP-for-Paxo/blob/main/README.md#comment-installer-et-int%C3%A9grer-le-keyboardapp-plugin-dans-un-app-lua">Comment installer KeyBoardApp for Paxo -- le Plugin</a>
 <br>
