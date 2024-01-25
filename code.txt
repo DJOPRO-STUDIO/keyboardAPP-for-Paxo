@@ -1,8 +1,6 @@
-local OUT = ""
-    
+local OUT = "" -- THIS VALUE IS USED TO GET THE OUTPUT KEYBOARD
 
-    
-    function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
+function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
         local gui = require('paxolib')
         local default = ""
         local LIVEtext = false
@@ -79,53 +77,6 @@ local OUT = ""
             
 
             gui.setWindow(KEYBOARD)
-            -- FINISH DEFINE BUTTONS KEYBOARD
-            -- START CODING
-            
-            --d_3:setFontSize(15)
-            a_1:setText("e")
-            a_2:setText("r")
-            a_3:setText("r")
-            a_4:setText("o")
-            a_5:setText("r")
-            a_6:setText(" ")
-            a_7:setText(" ")
-            a_8:setText(" ")
-            a_9:setText(" ")
-            a_10:setText(" ")
-        
-            b_1:setText(" ")
-            b_2:setText(" ")
-            b_3:setText(" ")
-            b_4:setText("l")
-            b_5:setText("o")
-            b_6:setText("a")
-            b_7:setText("d")
-            b_8:setText("i")
-            b_9:setText("n")
-            b_10:setText("g")
-        
-            c_maj:setFontSize(15)
-        
-            c_maj:setText("min")
-            c_2:setText("k")
-            c_3:setText("e")
-            c_4:setText("y")
-            c_5:setText("b")
-            c_6:setText("r")
-            c_7:setText("d")
-            --c_del:setText("=>")
-            
-            --d_fin:setFontSize(15)
-            d_spe:setFontSize(15)
-        
-            --d_3:setText("  space")
-            --d_2:setText("'")
-            d_4:setText(",")
-            --d_fin:setText("==>")
-            d_spe:setText(":;!")
-            
-            -- Reading System 
             
             local AZQWER = ""
     
@@ -136,48 +87,29 @@ local OUT = ""
                     -- VALUE SPECIALKEYS
                     
                     -- CHANGE BUTTON DISPLAY
-                    a_1:setText("1")
-                    a_2:setText("2")
-                    a_3:setText("3")
-                    a_4:setText("4")
-                    a_5:setText("5")
-                    a_6:setText("6")
-                    a_7:setText("7")
-                    a_8:setText("8")
-                    a_9:setText("9")
-                    a_10:setText("0")
                 
-                    b_1:setText("'")
-                    b_2:setText("-")
-                    b_3:setText("/")
-                    b_4:setText("{")
-                    b_5:setText("}")
-                    b_6:setText("<")
-                    b_7:setText(">")
-                    b_8:setText(".")
-                    b_9:setText("&")
-                    b_10:setText("#")
-                
-                    c_maj:setFontSize(15)
-                
-                    c_maj:setText("@")
-                    c_2:setText("~")
-                    c_3:setText("(")
-                    c_4:setText(")")
-                    c_5:setText(":")
-                    c_6:setText(";")
-                    c_7:setText("_")
-                    --c_del:setText("<=")
-                    
-                    --d_fin:setFontSize(15)
-                    d_spe:setFontSize(15)
-                
-                    d_spe:setText("ABC")
-                    --d_3:setText(" SPACE")
-                    d_4:setText("?")
-                    --d_fin:setText("DONE")
 
-                else
+                    local keys = {
+                        {a_1, "1"}, {a_2, "2"}, {a_3, "3"}, {a_4, "4"}, {a_5, "5"},
+                        {a_6, "6"}, {a_7, "7"}, {a_8, "8"}, {a_9, "9"}, {a_10, "0"},
+                        {b_1, "'"}, {b_2, "-"}, {b_3, "/"}, {b_4, "{"}, {b_5, "}"},
+                        {b_6, "<"}, {b_7, ">"}, {b_8, "."}, {b_9, "&"}, {b_10, "#"},
+                        {c_maj, "@"}, {c_2, "~"}, {c_3, "("}, {c_4, ")"}, {c_5, ":"},
+                        {c_6, ";"}, {c_7, "_"},
+                        {d_spe, "ABC"},
+                        {d_4, "?"}
+                        -- Add d_fin:setText("DONE") if needed
+                    }
+
+                        for _, keyInfo in ipairs(keys) do
+                            local button, text = keyInfo[1], keyInfo[2]
+                                button:setText(text)
+                             -- Optional: Set font size for specific buttons
+                            if button == c_maj or button == d_spe then
+                                 button:setFontSize(15)
+                            end
+                        end
+                
                     
                 end
 
@@ -186,89 +118,53 @@ local OUT = ""
                     AZQWER = "AZERTY"
                     if TYPE == "MIN" then
     
-                        a_1:setText("a")
-                        a_2:setText("z")
-                        a_3:setText("e")
-                        a_4:setText("r")
-                        a_5:setText("t")
-                        a_6:setText("y")
-                        a_7:setText("u")
-                        a_8:setText("i")
-                        a_9:setText("o")
-                        a_10:setText("p")
-                    
-                        b_1:setText("q")
-                        b_2:setText("s")
-                        b_3:setText("d")
-                        b_4:setText("f")
-                        b_5:setText("g")
-                        b_6:setText("h")
-                        b_7:setText("j")
-                        b_8:setText("k")
-                        b_9:setText("l")
-                        b_10:setText("m")
-                    
-                        c_maj:setFontSize(15)
-                    
-                        c_maj:setText("min")
-                        c_2:setText("w")
-                        c_3:setText("x")
-                        c_4:setText("c")
-                        c_5:setText("v")
-                        c_6:setText("b")
-                        c_7:setText("n")
-                        --c_del:setText("<=")
-                        
-                        --d_fin:setFontSize(15)
-                        d_spe:setFontSize(15)
-                    
-                        d_spe:setText(";:!")
-                        --d_3:setText(" SPACE")
-                        d_4:setText(",")
-                        --d_fin:setText("DONE")
+                        local keys = {
+                        {a_1, "a"}, {a_2, "z"}, {a_3, "e"}, {a_4, "r"}, {a_5, "t"},
+                        {a_6, "y"}, {a_7, "u"}, {a_8, "i"}, {a_9, "o"}, {a_10, "p"},
+                        {b_1, "q"}, {b_2, "s"}, {b_3, "d"}, {b_4, "f"}, {b_5, "g"},
+                        {b_6, "h"}, {b_7, "j"}, {b_8, "k"}, {b_9, "l"}, {b_10, "m"},
+                        {c_maj, "min"}, {c_2, "w"}, {c_3, "x"}, {c_4, "c"}, {c_5, "v"},
+                        {c_6, "b"}, {c_7, "n"},
+                        {d_spe, ";:!"},
+                        {d_4, ","}
+                        -- Add d_3 and d_fin if needed
+                        }
+
+                        for _, keyInfo in ipairs(keys) do
+                            local button, text = keyInfo[1], keyInfo[2]
+                            button:setText(text)
+
+                            -- Optional: Set font size for specific buttons
+                            if button == c_maj or button == d_spe then
+                                button:setFontSize(15)
+                            end
+                        end
+
     
                     else
     
-                        a_1:setText("A")
-                        a_2:setText("Z")
-                        a_3:setText("E")
-                        a_4:setText("R")
-                        a_5:setText("T")
-                        a_6:setText("Y")
-                        a_7:setText("U")
-                        a_8:setText("I")
-                        a_9:setText("O")
-                        a_10:setText("P")
-                    
-                        b_1:setText("Q")
-                        b_2:setText("S")
-                        b_3:setText("D")
-                        b_4:setText("F")
-                        b_5:setText("G")
-                        b_6:setText("H")
-                        b_7:setText("J")
-                        b_8:setText("K")
-                        b_9:setText("L")
-                        b_10:setText("M")
-                    
-                        c_maj:setFontSize(15)
-                    
-                        c_maj:setText("MAJ")
-                        c_2:setText("W")
-                        c_3:setText("X")
-                        c_4:setText("C")
-                        c_5:setText("V")
-                        c_6:setText("B")
-                        c_7:setText("N")
-                        --c_del:setText("<=")
+                        local buttonTextMappings = {
+                            {a_1, "A"}, {a_2, "Z"}, {a_3, "E"}, {a_4, "R"}, {a_5, "T"},
+                            {a_6, "Y"}, {a_7, "U"}, {a_8, "I"}, {a_9, "O"}, {a_10, "P"},
+                            {b_1, "Q"}, {b_2, "S"}, {b_3, "D"}, {b_4, "F"}, {b_5, "G"},
+                            {b_6, "H"}, {b_7, "J"}, {b_8, "K"}, {b_9, "L"}, {b_10, "M"},
+                            {c_maj, "MAJ"}, {c_2, "W"}, {c_3, "X"}, {c_4, "C"}, {c_5, "V"},
+                            {c_6, "B"}, {c_7, "N"},
+                            {d_spe, "(-:"},
+                            {d_4, "'"}
+                            -- Add d_3 and d_fin if needed
+                        }
                         
-                        --d_fin:setFontSize(15)
-                        d_spe:setFontSize(15)
-                    
-                        d_spe:setText("(-:")
-                        --d_3:setText(" SPACE")
-                        d_4:setText("'")
-                        --d_fin:setText("DONE")
+                        for _, mapping in ipairs(buttonTextMappings) do
+                            local button, text = mapping[1], mapping[2]
+                            button:setText(text)
+                        
+                            -- Optional: Set font size for specific buttons
+                            if button == c_maj or button == d_spe then
+                                button:setFontSize(15)
+                            end
+                        end
+                        
     
                     end
                 end
@@ -278,89 +174,32 @@ local OUT = ""
                     AZQWER = "QWERTY"
                     if TYPE == "MIN" then
     
-                        a_1:setText("q")
-                        a_2:setText("w")
-                        a_3:setText("e")
-                        a_4:setText("r")
-                        a_5:setText("t")
-                        a_6:setText("y")
-                        a_7:setText("u")
-                        a_8:setText("i")
-                        a_9:setText("o")
-                        a_10:setText("p")
-                    
-                        b_1:setText("a")
-                        b_2:setText("s")
-                        b_3:setText("d")
-                        b_4:setText("f")
-                        b_5:setText("g")
-                        b_6:setText("h")
-                        b_7:setText("j")
-                        b_8:setText("k")
-                        b_9:setText("l")
-                        b_10:setText("z")
-                    
-                        c_maj:setFontSize(15)
-                    
-                        c_maj:setText("min")
-                        c_2:setText("x")
-                        c_3:setText("c")
-                        c_4:setText("v")
-                        c_5:setText("b")
-                        c_6:setText("n")
-                        c_7:setText("m")
-                        --c_del:setText("<=")
+                        local buttonTextMappings = {
+                            {a_1, "q"}, {a_2, "w"}, {a_3, "e"}, {a_4, "r"}, {a_5, "t"},
+                            {a_6, "y"}, {a_7, "u"}, {a_8, "i"}, {a_9, "o"}, {a_10, "p"},
+                            {b_1, "a"}, {b_2, "s"}, {b_3, "d"}, {b_4, "f"}, {b_5, "g"},
+                            {b_6, "h"}, {b_7, "j"}, {b_8, "k"}, {b_9, "l"}, {b_10, "z"},
+                            {c_maj, "min"}, {c_2, "x"}, {c_3, "c"}, {c_4, "v"}, {c_5, "b"},
+                            {c_6, "n"}, {c_7, "m"},
+                            {d_spe, ";:!"},
+                            {d_4, ","}
+                            -- Add d_3 and d_fin if needed
+                        }
                         
-                        --d_fin:setFontSize(15)
-                        d_spe:setFontSize(15)
-                    
-                        d_spe:setText(";:!")
-                        --d_3:setText(" SPACE")
-                        d_4:setText(",")
-                        --d_fin:setText("DONE")
+                        for _, mapping in ipairs(buttonTextMappings) do
+                            local button, text = mapping[1], mapping[2]
+                            button:setText(text)
+                        
+                            -- Optional: Set font size for specific buttons
+                            if button == c_maj or button == d_spe then
+                                button:setFontSize(15)
+                            end
+                        end
+                        
     
                     else
     
-                        a_1:setText("Q")
-                        a_2:setText("W")
-                        a_3:setText("E")
-                        a_4:setText("R")
-                        a_5:setText("T")
-                        a_6:setText("Y")
-                        a_7:setText("U")
-                        a_8:setText("I")
-                        a_9:setText("O")
-                        a_10:setText("P")
-                    
-                        b_1:setText("A")
-                        b_2:setText("S")
-                        b_3:setText("D")
-                        b_4:setText("F")
-                        b_5:setText("G")
-                        b_6:setText("H")
-                        b_7:setText("J")
-                        b_8:setText("K")
-                        b_9:setText("L")
-                        b_10:setText("Z")
-                    
-                        c_maj:setFontSize(15)
-                    
-                        c_maj:setText("MAJ")
-                        c_2:setText("X")
-                        c_3:setText("C")
-                        c_4:setText("V")
-                        c_5:setText("B")
-                        c_6:setText("N")
-                        c_7:setText("M")
-                        --c_del:setText("<=")
                         
-                        --d_fin:setFontSize(15)
-                        d_spe:setFontSize(15)
-                    
-                        d_spe:setText(")-:")
-                        --d_3:setText(" SPACE")
-                        d_4:setText(",")
-                        --d_fin:setText("DONE")
     
                     end
                 end
@@ -383,9 +222,7 @@ local OUT = ""
                     else
                         --print("-----------------   nothing")
                     end
-        
-                    
-        
+
                     if currentLine == lineNumber then
                         return line
                     end
@@ -430,8 +267,7 @@ local OUT = ""
                     AZQWER = "AZERTY"
                     local name = "AZERTY"
                     keyboardSelect:setText(name)
-                    
-        
+
                 else
         
                     keyboardSelect:setText(" NO KEYBOARD DETECTED")
@@ -442,8 +278,6 @@ local OUT = ""
                     list = list + 1
                     local ifFile = true
                     if ifFile then
-                        
-            
                         
                         AZQWER = "QWERTY"
                         local name = "QWERTY"
@@ -461,7 +295,6 @@ local OUT = ""
                     local ifFile = true
                     if ifFile then
                         
-                        
                         AZQWER = "AZERTY"
                         local name = "AZERTY"
                         keyboardSelect:setText(name)
@@ -476,17 +309,12 @@ local OUT = ""
                     local ifFile = true
                     if ifFile then
                         
-                        
-                        
                         gui.writeFile("default.txt", tostring(AZQWER))
                         if AZQWER == "AZERTY" then
                             setKeysLOCAL("AZERTY","MIN","no")
                         else
                             setKeysLOCAL("QWERTY","MIN","no")
                         end
-
-
-                        
 
                         gui.setWindow(KEYBOARD)
 
@@ -495,12 +323,7 @@ local OUT = ""
                         d_2 = gui.image(KEYBOARD, "lang.png", 55, 140, 25, 25)
                         d_3 = gui.image(KEYBOARD, "space.png", 90, 130, 135, 40)
                         d_fin = gui.image(KEYBOARD, "enter.png", 265, 130, 45, 40)
-                        
-                        
-                        
-                        
-                        
-                    
+
                     end
         
                 end)
@@ -510,293 +333,30 @@ local OUT = ""
             d_2:onClick( function()
                 setKeyboard()
             end)
+
+            -- Common function for button click event
+            local function handleButtonClick(button)
+                    local key = button:getText()
+                 OUT = OUT .. key
+                if LIVEtext then
+                    LIVEtext_LABEL()
+                end
+                print(OUT)
+            end
             
-            a_1:onClick( function()
-                local key = a_1:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_2:onClick( function()
-                local key = a_2:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_3:onClick( function()
-                local key = a_3:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_4:onClick( function()
-                local key = a_4:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_5:onClick( function()
-                local key = a_5:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_6:onClick( function()
-                local key = a_6:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_7:onClick( function()
-                local key = a_7:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_8:onClick( function()
-                local key = a_8:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_9:onClick( function()
-                local key = a_9:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            a_10:onClick( function()
-                local key = a_10:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_1:onClick( function()
-                local key = b_1:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_2:onClick( function()
-                local key = b_2:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_3:onClick( function()
-                local key = b_3:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_4:onClick( function()
-                local key = b_4:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_5:onClick( function()
-                local key = b_5:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_6:onClick( function()
-                local key = b_6:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_7:onClick( function()
-                local key = b_7:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_8:onClick( function()
-                local key = b_8:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_9:onClick( function()
-                local key = b_9:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            b_10:onClick( function()
-                local key = b_10:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            c_2:onClick( function()
-                local key = c_2:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            c_3:onClick( function()
-                local key = c_3:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            c_4:onClick( function()
-                local key = c_4:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            c_5:onClick( function()
-                local key = c_5:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            c_6:onClick( function()
-                local key = c_6:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
-            c_7:onClick( function()
-                local key = c_7:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
-            end)
-        
+            -- List of buttons
+            local buttons = {a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8, a_9, a_10, b_1, b_2, b_3, b_4, b_5, b_6, b_7, b_8, b_9, b_10, c_2, c_3, c_4, c_5, c_6, c_7}
+
+            -- Attach the common function to each button
+            for _, button in ipairs(buttons) do
+                button:onClick(function()
+                    
+                    
+                    handleButtonClick(button)
+
+                end)
+            end
+
             c_del:onClick( function()
                 function removeOneChar(inputString)
                     if #inputString > 0 then
@@ -805,13 +365,13 @@ local OUT = ""
                         return inputString  -- String is empty, nothing to remove
                     end
                 end
-                local key = removeOneChar(OUTKeyboard)
-                OUTKeyboard = key
-                OUT = OUTKeyboard
+                local key = removeOneChar(OUT)
+                --OUTKeyboard = key
+                OUT = key
                 if LIVEtext then
                     LIVEtext_LABEL()
                 end
-                print(OUTKeyboard)
+                print(OUT)
             end)
     
             c_maj:onClick( function()
@@ -828,14 +388,14 @@ local OUT = ""
 
                 else
 
-                    local key = OUTKeyboard .."@"
+                    local key = OUT .."@"
                 
-                    OUTKeyboard = key
-                    OUT = OUTKeyboard
+                    OUT = key
+                    --OUT = OUTKeyboard
                     if LIVEtext then
                         LIVEtext_LABEL()
                     end
-                    print(OUTKeyboard)
+                    print(OUT)
 
                 end
 
@@ -843,25 +403,14 @@ local OUT = ""
             end)
         
             d_3:onClick( function()
-                local key = OUTKeyboard .." "
+                local key = OUT .. " "
                 
-                OUTKeyboard = key
-                OUT = OUTKeyboard
+                
+                OUT = key
                 if LIVEtext then
                     LIVEtext_LABEL()
                 end
-                print(OUTKeyboard)
-            end)
-        
-            d_4:onClick( function()
-                local key = d_4:getText()
-                
-                OUTKeyboard = OUTKeyboard .. key
-                OUT = OUTKeyboard
-                if LIVEtext then
-                    LIVEtext_LABEL()
-                end
-                print(OUTKeyboard)
+                print(OUT)
             end)
     
             d_fin:onClick(function()
@@ -889,6 +438,4 @@ local OUT = ""
         else
             gui.setWindow(windowPrece)
         end
-    
-        
     end
