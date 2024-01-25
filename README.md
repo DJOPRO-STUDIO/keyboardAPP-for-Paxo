@@ -62,7 +62,7 @@ Une nouvelle version du clavier nommé "minimal version" va être la version pre
 2 - Extracter le fichier dans le dossier de l'app lua que vous voulez l'intégrer dedans .
 <br>
 <br>
-3 - Ouvrez le fichier "code.txt" qui ce trouve dans le dossier précédent
+3 - Ouvrez le fichier "code.txt" ( ou le "code.lua" ) qui ce trouve dans le dossier précédent
 <br>
 <br>
 4 - Copiez tous le code le fichier "main.lua" de votre APP LUA
