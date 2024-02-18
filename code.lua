@@ -1,6 +1,6 @@
 local OUT = "" -- THIS VALUE IS USED TO GET THE OUTPUT KEYBOARD
 
-function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
+function DJKeyboard(windowPrece,shHide,TypeKeyboard,valueDONEKEYBOARD)
         local gui = require('paxolib')
         local default = ""
         local LIVEtext = false
@@ -13,7 +13,7 @@ function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
         -- shHide = SHOW / HIDE
         -- windowPrece = WINDOW THAT TO BE BASCULATE
         
-    
+    if TypeKeyboard == "string" then
         if shHide == "SHOW" then
     
             local OUTKeyboard = ""
@@ -64,15 +64,15 @@ function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
             local c_5 = gui.label(KEYBOARD, 160, 80, 30, 40)
             local c_6 = gui.label(KEYBOARD, 195, 80, 30, 40)
             local c_7 = gui.label(KEYBOARD, 230, 80, 30, 40)
-            local c_del = gui.image(KEYBOARD, "backspace.png", 265, 80, 45, 40)
+            local c_del = gui.image(KEYBOARD, "KB_files/backspace.png", 265, 80, 45, 40)
             
             -- LINE 4 || 425
         
             local d_spe = gui.label(KEYBOARD, 0, 130, 50, 40)
-            local d_2 = gui.image(KEYBOARD, "lang.png", 55, 140, 25, 25)
-            local d_3 = gui.image(KEYBOARD, "space.png", 90, 130, 135, 40)
+            local d_2 = gui.image(KEYBOARD, "KB_files/lang.png", 55, 140, 25, 25)
+            local d_3 = gui.image(KEYBOARD, "KB_files/space.png", 90, 130, 135, 40)
             local d_4 = gui.label(KEYBOARD, 230, 130, 30, 40)
-            local d_fin = gui.image(KEYBOARD, "enter.png", 265, 130, 45, 40)
+            local d_fin = gui.image(KEYBOARD, "KB_files/enter.png", 265, 130, 45, 40)
             
             
 
@@ -199,6 +199,26 @@ function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
     
                     else
     
+                        local buttonLabelMappings = {
+                            {a_1, "Q"}, {a_2, "W"}, {a_3, "E"}, {a_4, "R"}, {a_5, "T"},
+                            {a_6, "Y"}, {a_7, "U"}, {a_8, "I"}, {a_9, "O"}, {a_10, "P"},
+                            {b_1, "A"}, {b_2, "S"}, {b_3, "D"}, {b_4, "F"}, {b_5, "G"},
+                            {b_6, "H"}, {b_7, "J"}, {b_8, "K"}, {b_9, "L"}, {b_10, "Z"},
+                            {c_maj, "MAJ"}, {c_2, "X"}, {c_3, "C"}, {c_4, "V"}, {c_5, "B"},
+                            {c_6, "N"}, {c_7, "M"},
+                            {d_spe, ")-:"},
+                            {d_4, ","}
+                        }
+                        
+                        for _, mapping in ipairs(buttonLabelMappings) do
+                            local button, label = mapping[1], mapping[2]
+                            button:setText(label)
+                        
+                            -- Optional: Set font size for specific buttons
+                            if button == c_maj or button == d_spe then
+                                button:setFontSize(15)
+                            end
+                        end
                         
     
                     end
@@ -319,10 +339,10 @@ function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
                         gui.setWindow(KEYBOARD)
 
                         -- SHOW THE ICONS
-                        c_del = gui.image(KEYBOARD, "backspace.png", 265, 80, 45, 40)
-                        d_2 = gui.image(KEYBOARD, "lang.png", 55, 140, 25, 25)
-                        d_3 = gui.image(KEYBOARD, "space.png", 90, 130, 135, 40)
-                        d_fin = gui.image(KEYBOARD, "enter.png", 265, 130, 45, 40)
+                        c_del = gui.image(KEYBOARD, "KB_files/backspace.png", 265, 80, 45, 40)
+                        d_2 = gui.image(KEYBOARD, "KB_files/lang.png", 55, 140, 25, 25)
+                        d_3 = gui.image(KEYBOARD, "KB_files/space.png", 90, 130, 135, 40)
+                        d_fin = gui.image(KEYBOARD, "KB_files/enter.png", 265, 130, 45, 40)
 
                     end
         
@@ -438,4 +458,98 @@ function DJKeyboard(windowPrece,shHide,valueDONEKEYBOARD)
         else
             gui.setWindow(windowPrece)
         end
+    elseif TypeKeyboard == "number" then
+            local OUTKeyboard = ""
+        
+            local KEYBOARD = gui.window("Number")
+            
+            default = ""
+            
+            local title = gui.label(KEYBOARD, 60, 50, 200, 100)
+        
+            KEYBOARD:setWidth(350)
+            KEYBOARD:setHeight(185)
+            KEYBOARD:setX(0)
+            KEYBOARD:setY(295)
+        
+        
+            -- LINE 1 || 290
+            local a_1 = gui.label(KEYBOARD, 80, 10, 40, 50)
+            local a_2 = gui.label(KEYBOARD, 140, 10, 40, 50)
+            local a_3 = gui.label(KEYBOARD, 200, 10, 40, 50)
+
+            local a_4 = gui.label(KEYBOARD, 80, 52, 40, 50)
+            local a_5 = gui.label(KEYBOARD, 140, 52, 40, 50)
+            local a_6 = gui.label(KEYBOARD, 200, 52, 40, 50)
+
+            local a_7 = gui.label(KEYBOARD, 80, 92, 40, 50)
+            local a_8 = gui.label(KEYBOARD, 140, 92, 40, 50)
+            local a_9 = gui.label(KEYBOARD, 200, 92, 40, 50)
+
+            local erase = gui.image(KEYBOARD,"KB_files/backspace.png", 70, 122, 50, 50)
+            local a_10 = gui.label(KEYBOARD, 140, 132, 40, 50)
+            local enter = gui.image(KEYBOARD,"KB_files/enter.png", 200, 122, 40, 50)
+
+            
+            gui.setWindow(KEYBOARD)
+
+            local keys = {
+                {a_1, "1"}, {a_2, "2"}, {a_3, "3"}, {a_4, "4"}, {a_5, "5"}, {a_6, "6"}, {a_7, "7"}, {a_8, "8"}, {a_9, "9"}, {a_10, "0"}
+                -- Add d_3 and d_fin if needed
+            }
+
+                for _, keyInfo in ipairs(keys) do
+                    local button, text = keyInfo[1], keyInfo[2]
+                    button:setFontSize(25)
+                    button:setText(text)
+
+                    -- Optional: Set font size for specific buttons
+                    
+                end
+
+            local function handleButtonClick(button)
+                    local key = button:getText()
+                 OUT = OUT .. key
+                if LIVEtext then
+                    LIVEtext_LABEL()
+                end
+                print(OUT)
+            end
+            
+            -- List of buttons
+            local buttons = {a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8, a_9, a_10}
+
+            -- Attach the common function to each button
+            for _, button in ipairs(buttons) do
+                button:onClick(function()
+                    
+                    
+                    handleButtonClick(button)
+
+                end)
+            end
+
+            enter:onClick(function()
+                gui.setWindow(windowPrece)
+                valueDONEKEYBOARD()
+            end)
+
+            erase:onClick( function()
+                function removeOneChar(inputString)
+                    if #inputString > 0 then
+                        return string.sub(inputString, 1, -2)  -- Removes the last character
+                    else
+                        return inputString  -- String is empty, nothing to remove
+                    end
+                end
+                local key = removeOneChar(OUT)
+                --OUTKeyboard = key
+                OUT = key
+                if LIVEtext then
+                    LIVEtext_LABEL()
+                end
+                print(OUT)
+            end)
+
     end
+end
